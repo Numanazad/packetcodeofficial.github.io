@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 /*code to SLIDE IN ELEMENTS*/
 var sliders=document.querySelectorAll(".slide-in");
-const appearoptions={threshold:.5, rootMargin:"0px 0px -100px 0px"};
+const appearoptions={threshold:0, rootMargin:"0px 0px -100px 0px"};
 var appearonscroll=new IntersectionObserver(function(entries,appearonscroll){
  entries.forEach(entry=>{
    if(!entry.isIntersecting){

@@ -1,0 +1,143 @@
+<style>
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  background-color: #fff;
+  font-family: calibri;
+  overflow-x: hidden;
+}
+h1{
+  font-size: 4em;
+  font-weight: 300;
+  background-color: #071d36;
+  color:white;
+  padding:300px 0 50px 100px;
+  margin-bottom: 100px;
+}
+.footer{
+  height:100px;
+  width:100%;
+  background-color: #071d36;
+  color:white;
+  font-size: 4em;
+  font-weight: 300;
+  padding:10px 0 0 750px;
+}
+#textfading{
+  font-size:1.4em;
+  color:#555;
+  width:600px;
+  margin:0 auto 200px auto;
+  font-weight: 300;
+}
+
+
+.container{
+  background: #f4f4f4;
+  padding:4em 0;
+  align-items: center;
+  display:grid;
+  grid-gap:2em;
+  grid-template-columns:minmax(1em,1fr) repeat(2,minmax(200px,400px)) minmax(1em,1fr);
+}
+.from-left{  
+  grid-column:2/3;
+  transform:translateX(-50%);
+}
+.from-right{
+  grid-column:3/4;
+  transform:translateX(50%);
+}
+
+.from-left,
+.from-right{
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity:0;
+}
+
+.from-left.appear,
+.from-right.appear{
+  transform:translateX(0);
+  opacity:1;
+}
+@media (max-width: 600px){
+  h1{
+  font-size: 2em;
+  font-weight: 150;
+  background-color: #071d36;
+  color:white;
+  padding:150px 0 25px 50px;
+  margin-bottom: 50px;
+}
+ #textfading{
+  font-size:1.1em;
+  color:#555;
+  width:350px;
+  margin:0 auto 80px auto;
+  font-weight: 150;
+}
+.footer{
+  height:70px;
+  width:100%;
+  background-color: #071d36;
+  color:white;
+  font-size: 3em;
+  font-weight: 300;
+  padding:20px 0 0 300px;
+}
+.container{
+  background: #f4f4f4;
+  padding:3em 0;
+  align-items: center;
+  display:grid;
+  grid-gap:1em;
+  grid-template-columns:minmax(1em,1fr) repeat(2,minmax(200px,300px)) minmax(1em,1fr);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+}
+
+@media (max-width: 400px){
+  h1{
+  font-size: 1.8em;
+  font-weight: 150;
+  background-color: #071d36;
+  color:white;
+  padding:150px 0 25px 50px;
+  margin-bottom: 50px;
+}
+ #textfading{
+  font-size:1em;
+  color:#555;
+  width:320px;
+  margin:0 auto 80px auto;
+  font-weight: 150;
+}
+.footer{
+  height:60px;
+  width:100%;
+  background-color: #071d36;
+  color:white;
+  font-size: 2em;
+  font-weight: 300;
+  padding:20px 0 0 220px;
+}
+.wrapper{
+  background:   #99a3a4;
+}
+.container{
+  background: #f4f4f4;
+  padding:1em 1em;
+  font-family: 'Times New Roman', Times, serif;
+  display:flex;
+  margin-bottom: 10px;
+}
+.container img{
+  width:250px;
+  height:200px;
+}
+}
+
+</style>

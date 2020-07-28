@@ -130,9 +130,10 @@ h1{
   font-family: 'Times New Roman', Times, serif;
   display:flex;
   margin-bottom: 10px;
+  width:100%;
 }
 .container img{
-  width:250px;
+  width:45%;
   height:200px;
 }
 }

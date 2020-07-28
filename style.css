@@ -119,6 +119,7 @@ h1{
   color:white;
   font-size: 2em;
   font-weight: 300;
+  overflow-y:hidden;
 }
 .wrapper{
   background:   #99a3a4;
